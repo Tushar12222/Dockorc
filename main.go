@@ -48,7 +48,7 @@ func main() {
 
 	fmt.Println("Containers processing data")
 
-	time.Sleep(1 * time.Second)
+	time.Sleep(time.Duration((len(containers) / 2)) * time.Second)
 
 	processedData := make(map[string]int)
 
